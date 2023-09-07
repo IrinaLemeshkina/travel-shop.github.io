@@ -1,0 +1,264 @@
+.reviews {
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+.reviews__wrapper {
+  position: relative;
+  padding: 48px 0 90px 120px;
+  width: 100%;
+  max-width: 1440px;
+
+  @include vp-1199 {
+    padding: 50px 0 50px 45px;
+  }
+
+  @include vp-767 {
+    padding: 0 15px 30px;
+  }
+}
+
+.reviews h2 {
+  margin: 0 auto;
+  padding-top: 60px;
+  padding-left: 120px;
+  font-size: 35px;
+  font-weight: 800;
+  line-height: 35px;
+  letter-spacing: 0;
+  text-align: left;
+
+  @include vp-1199 {
+    padding-top: 65px;
+    padding-left: 45px;
+    font-size: 25px;
+    line-height: 25px;
+  }
+
+  @include vp-767 {
+    font-size: 22px;
+    line-height: 22px;
+    margin: 25px auto 30px;
+    padding-top: 5px;
+    padding-left: 15px;
+  }
+}
+
+.reviews h2::after {
+  content: attr(data-value);
+  position: absolute;
+  left: 115px;
+  top: 45px;
+  font-size: 55px;
+  font-weight: 800;
+  line-height: 1;
+  opacity: 0.03;
+
+  @include vp-1199 {
+    font-size: 40px;
+  }
+
+  @include vp-767 {
+    font-size: 26px;
+    left: 15px;
+    top: 0;
+  }
+}
+
+.reviews__swiper {
+  z-index: 2;
+}
+
+.reviews__swiper-wrapper {
+  padding: 30px 0 0 0;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  @include vp-1199 {
+    margin: 0 45px 0 45px;
+  }
+
+  @include vp-767 {
+    padding: 0 15px;
+    margin: 0;
+  }
+}
+
+.reviews__card {
+  margin: 0 auto;
+  cursor: grab;
+  border: 0 solid $color-default-white;
+  box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.1);
+  background-color: $color-default-white;
+  height: auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 285px 450px;
+  max-width: 788px;
+  gap: 3px;
+
+  @include vp-1199 {
+    max-width: 560px;
+    grid-template-columns: 186px 300px;
+    gap: 30px;
+    padding-bottom: 10px;
+  }
+
+  @include vp-767 {
+    max-width: 290px;
+    width: 100%;
+    height: 100%;
+    display: block;
+    padding-bottom: 35px;
+  }
+}
+
+.reviews__card img {
+  object-fit: cover;
+  background-color: $color-default-white;
+  min-width: 258px;
+
+  @include vp-1199 {
+    min-width: 186px;
+    min-height: 237px;
+  }
+
+  @include vp-767 {
+    min-width: 250px;
+    min-height: 169px;
+  }
+}
+
+.reviews .swiper-button {
+  position: absolute;
+  top: 17.5%;
+  width: 37px;
+  height: 35px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 13px;
+  background-color: #0266c1;
+  fill: $color-default-white;
+  z-index: 2;
+  cursor: pointer;
+
+  @include vp-1199 {
+    top: 18.5%;
+  }
+
+  @include vp-767 {
+    top: 8%;
+  }
+
+  &-prev {
+    left: 86.3%;
+    transform: translate(0, -10%);
+    background-image: url("../img/sprite/arrow-left.svg");
+    fill: $color-default-white;
+
+    &:hover,
+    &:focus {
+      background-image: url("../img/sprite/arrow-left-hover.svg");
+      background-size: 37px 35px;
+      background-color: $color-default-white;
+    }
+
+    &:active {
+      background-image: url("../img/sprite/arrow-left-active.svg");
+      background-size: 37px 35px;
+      background-color: #1c3374;
+    }
+
+    @include vp-1199 {
+      left: 84%;
+    }
+
+    @include vp-767 {
+      left: 71%;
+    }
+  }
+
+  &-next {
+    right: 8.3%;
+    transform: translate(0, -10%);
+    background-image: url("../img/sprite/arrow-right.svg");
+    fill: $color-default-white;
+
+    &:hover,
+    &:focus {
+      background-image: url("../img/sprite/arrow-right-hover.svg");
+      background-size: 37px 35px;
+      background-color: $color-default-white;
+    }
+
+    &:active {
+      background-image: url("../img/sprite/arrow-right-active.svg");
+      background-size: 37px 35px;
+      background-color: #1c3374;
+      fill: #ffffff;
+    }
+  }
+
+  @include vp-1199 {
+    right: 6%;
+  }
+
+  @include vp-767 {
+    right: 4%;
+  }
+}
+
+.reviews__info {
+  display: grid;
+  grid-template-rows: auto 48px;
+  height: 250px;
+  justify-content: space-around;
+
+  @include vp-1199 {
+    height: 245px;
+  }
+
+  @include vp-767 {
+    padding-top: 20px;
+  }
+}
+
+.reviews__text p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0;
+  text-align: left;
+  margin: 0;
+  padding-top: 12px;
+
+  @include vp-1199 {
+    font-size: 12px;
+    line-height: 18px;
+    padding-bottom: 10px;
+    padding-top: 0;
+  }
+}
+
+.reviews__autor p {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 13px;
+  letter-spacing: 0;
+  text-align: left;
+  margin: 0 auto;
+
+  @include vp-1199 {
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
+
+.reviews__autor span {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 12px;
+  letter-spacing: 0;
+  text-align: left;
+}
