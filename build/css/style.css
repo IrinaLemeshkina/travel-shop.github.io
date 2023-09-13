@@ -4070,6 +4070,8 @@ button,
 @media (max-width: 1199px) {
   .training h2::after {
     font-size: 40px;
+    left: 40px;
+    top: 25px;
   }
 }
 @media (max-width: 767px) {
@@ -4574,14 +4576,14 @@ button,
   .about h2::after {
     font-size: 40px;
     left: 0;
-    top: 0;
+    top: -10px;
   }
 }
 @media (max-width: 767px) {
   .about h2::after {
     font-size: 26px;
     left: 15px;
-    top: 44.6%;
+    top: 45px;
   }
 }
 
@@ -4734,13 +4736,15 @@ button,
 @media (max-width: 1199px) {
   .reviews h2::after {
     font-size: 40px;
+    left: 40px;
+    top: 55px;
   }
 }
 @media (max-width: 767px) {
   .reviews h2::after {
     font-size: 26px;
     left: 15px;
-    top: 0;
+    top: 25px;
   }
 }
 
@@ -5063,7 +5067,7 @@ button,
   content: attr(data-value);
   position: absolute;
   left: 34%;
-  top: 54.8%;
+  top: 55.7%;
   font-size: 55px;
   font-weight: 800;
   line-height: 1;
@@ -5080,7 +5084,7 @@ button,
   .advantages h2::after {
     font-size: 26px;
     left: 25px;
-    top: 32px;
+    top: 51.5%;
   }
 }
 
@@ -5359,7 +5363,7 @@ button,
 @media (max-width: 1199px) {
   .gallery h2::after {
     left: 35px;
-    top: 50px;
+    top: 20px;
     font-size: 40px;
   }
 }
@@ -5367,7 +5371,7 @@ button,
   .gallery h2::after {
     font-size: 26px;
     left: 12px;
-    top: 30px;
+    top: 0;
   }
 }
 
@@ -5868,6 +5872,8 @@ button,
 @media (max-width: 1199px) {
   .contacts h2::after {
     font-size: 40px;
+    left: 40px;
+    top: 25px;
   }
 }
 @media (max-width: 767px) {
