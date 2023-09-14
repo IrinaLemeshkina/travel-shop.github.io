@@ -3,8 +3,7 @@ import {showMenu} from './utils/menu';
 import {showVideo} from './utils/video';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
-/*import './modules/map';*/
-import {map} from './modules/map';
+import './modules/map';
 
 // ---------------------------------
 
